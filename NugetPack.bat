@@ -16,5 +16,7 @@ GOTO END
 :END
 ECHO Nuget Pack 1 OK
 
+
 :HELL
 ECHO Wrong ARGS. Version not found
+exit /B
