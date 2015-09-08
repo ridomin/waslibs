@@ -5,9 +5,9 @@ IF  "%1"=="" (
 )
 
 IF  "%2"=="" (	
-	SET _FULLVERSION_=%_VERSION_%
+	SET _FULLVERSION_="%_VERSION_%"
 ) ELSE (
-	SET _FULLVERSION_=%_VERSION_%-%2%
+	SET _FULLVERSION_="%_VERSION_%-%2%"
 )
 
 IF EXIST _TempNugets del /q /s _TempNugets\WindowsAppStudio*

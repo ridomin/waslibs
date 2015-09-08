@@ -71,7 +71,7 @@ $newReference = 'WindowsAppStudio.Common": "' + $NewInformationalVersion
 $jsonContent = Get-Content($projectJsonFile)
 attrib $projectJsonFile -r
 $jsonContent -replace $projectJsonRegex, $newReference| Out-File $projectJsonFile
-
+Write-Host "$projectJsonFile.FullName - version applied"
 
 
 
