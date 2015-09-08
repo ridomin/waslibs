@@ -39,8 +39,6 @@ GOTO END
 ECHO VERSION NOT FOUND
 
 :END
-git add .
-git commit -m "Created version %_FULLVERSION_%"
 git tag v%_FULLVERSION_%
 git push --tag
 ECHO PROCESS FINISHED
